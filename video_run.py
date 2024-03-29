@@ -27,7 +27,7 @@ import importlib.util
 class VideoOverviewWindow:
     def __init__(self, video, face_detector) -> None:
         self.root = t.Tk()
-        self.root.title("Video Overview")
+        self.root.title("Video Test")
         self.video = video
         self.face_detector = face_detector
         self.current_frame_number = 0
@@ -36,7 +36,7 @@ class VideoOverviewWindow:
         self.frame = t.Frame(self.root)
         self.frame.pack(padx=10, pady=10)
 
-        t.Label(self.frame, text="Frame Preview").pack()
+        t.Label(self.frame, text="Preview").pack()
 
         self.image_label = t.Label(self.frame)
         self.image_label.pack()
